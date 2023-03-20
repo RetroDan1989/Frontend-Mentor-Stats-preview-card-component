@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Very_dark_blue_main_background: hsl(233, 47%, 7%);
+--Dark_desaturated_blue_card_background: hsl(244, 38%, 16%);
+--Soft_violet_accent: hsl(277, 64%, 61%);
+
+--White_main_heading_stats: hsl(0, 0%, 100%);
+--Slightly_transparent_white_main_paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly_transparent_white_stat_headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_dark_blue_main_background);
+    padding: 30px auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.card {
+    max-width:1110px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark_desaturated_blue_card_background);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px 20px;
+}
+
+span {
+    color: var(--Soft_violet_accent);
+}
+
+.info {
+    padding: 80px 120px 64px;
+    width: 50%;
+}
+
+.info__title {
+    font-size: 30px;
+    margin-bottom: 44px;
+    color: white;
+}
+
+.info__paragraph {
+    margin-bottom: 85px;
+    color: var(--Slightly_transparent_white_main_paragraph);
+}
+
+.status-container {
+    display: flex;
+    gap: 64px;
+}
+
+h3 {
+    color: white;
+}
+h5 {
+    color: var(--Slightly_transparent_white_main_paragraph);
+}
+
+/* Section02 Image */
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    background-color:hsla(277, 64%, 61%, 0.215);;
+
+    position: absolute;
+}
+
+@media screen and (max-width:930px) {
+
+    .card {
+        border: 1px solid black;
+        flex-direction: column-reverse;
+        width: 328px;
+        margin: 30px 20px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .info {
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .status-container {
+        gap: 0px;
+        justify-content: space-between;
+    }
+    
+}
